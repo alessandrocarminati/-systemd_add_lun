@@ -1,0 +1,14 @@
+[Unit]
+Description=scans given scsi target
+DefaultDependencies=no
+Before=sysinit.target
+IgnoreOnIsolate=yes
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/scsi_scan_target.sh
+
+[Install]
+WantedBy=sysinit.target
+WantedBy=initrd-switch-root.target
+WantedBy=multi-user.target

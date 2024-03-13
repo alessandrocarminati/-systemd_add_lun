@@ -1,0 +1,5 @@
+[Unit]
+Description=scans given scsi target
+
+[Install]
+WantedBy=multi-user.target

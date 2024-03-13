@@ -1,0 +1,5 @@
+config BR2_PACKAGE_SYSTEMD_ADD_LUN_Q
+    bool "systemd target to scan a given scsi lun, c version"
+    help
+      systemd target to scan a given scsi lun, C version
+
